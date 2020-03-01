@@ -7,6 +7,9 @@ public class Main {
         System.out.println("Hello World Team City");
         for(int i=0; i<5; i++){
 
+            if(i==4){
+                break;
+            }
             System.out.println("Iteration : " + (i+1));
         }
     }
