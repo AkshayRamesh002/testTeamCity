@@ -13,7 +13,7 @@ before_install:
 
 
 script: 
- - java -jar ./out/artifacts/testTeamCity_jar/testTeamCity.jari
+ - java -jar ./out/artifacts/testTeamCity_jar/testTeamCity.jar
  - bash <(curl -s https://codecov.io/bash)
  - python request.py
 
