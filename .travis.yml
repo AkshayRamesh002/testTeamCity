@@ -11,6 +11,7 @@ jdk:
 install:
  - pip install codecov
  - pip install coverage
+ - pip install pytest-cov
 script:
  - java -jar ./out/artifacts/testTeamCity_jar/testTeamCity.jar
 
