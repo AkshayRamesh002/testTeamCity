@@ -10,7 +10,7 @@ jdk:
 # Install the codecov pip dependency
 install:
  - pip install codecov
- - pip install coveragepy
+ - pip install coverage
 script:
  - java -jar ./out/artifacts/testTeamCity_jar/testTeamCity.jar
 
