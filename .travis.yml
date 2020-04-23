@@ -16,8 +16,8 @@ script:
  - java -jar ./out/artifacts/testTeamCity_jar/testTeamCity.jar
 
 after_success:
- - touch .coverage
  - bash <(curl -s https://codecov.io/bash)
+ - py.test --cov-report=xml --cov=myproj tests/
 
 # Each job in Travis CI has several steps:
 # https://docs.travis-ci.com/user/job-lifecycle/
