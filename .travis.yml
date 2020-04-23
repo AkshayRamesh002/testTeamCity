@@ -7,6 +7,10 @@ language: java
 jdk:
  - openjdk13
 
+# Install the codecov pip dependency
+install:
+ - pip install codecov
+ - pip install coveragepy
 script:
  - java -jar ./out/artifacts/testTeamCity_jar/testTeamCity.jar
 
