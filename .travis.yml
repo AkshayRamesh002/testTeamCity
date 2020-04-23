@@ -17,7 +17,10 @@ script:
 
 after_success:
  - bash <(curl -s https://codecov.io/bash)
- - py.test --cov-report=xml --cov=myproj tests/
+
+env:
+ global:
+  - CODECOV_TOKEN=5b570754-8e24-4b84-9d39-6a277fdad00f
 
 # Each job in Travis CI has several steps:
 # https://docs.travis-ci.com/user/job-lifecycle/
