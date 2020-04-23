@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="testTeamCity">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/testTeamCity_jar/testTeamCity.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
