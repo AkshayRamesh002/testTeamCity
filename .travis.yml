@@ -7,8 +7,15 @@ language: java
 jdk:
  - openjdk13
 
+before_install:
+  - pyenv install 3.6.0
+  - pip install requests
+
+
 script: 
- - java -jar ./out/artifacts/testTeamCity_jar/testTeamCity.jar
+ - java -jar ./out/artifacts/testTeamCity_jar/testTeamCity.jari
+ - bash <(curl -s https://codecov.io/bash)
+ - python request.py
 
 # Each job in Travis CI has several steps:
 # https://docs.travis-ci.com/user/job-lifecycle/
@@ -18,5 +25,3 @@ script:
 
 # This is to enable CodeCov's coverage
 # If a build is successful, the code is submitted for coverage analysis
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
